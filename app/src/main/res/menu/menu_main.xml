@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.newsBreeze.MainActivity">
+
+    <item
+        android:id="@+id/country"
+        android:icon="@drawable/outline_flag_24"
+        android:title="COUNTRY" />
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/IN"
+            android:checked="true"
+            android:title="India" />
+        <item
+            android:id="@+id/US"
+            android:title="US" />
+    </group>
+
+</menu>
+
+
