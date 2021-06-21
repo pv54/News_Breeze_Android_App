@@ -2,7 +2,6 @@ package com.example.newsBreeze
 
 import android.annotation.SuppressLint
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.webkit.WebView
 import android.webkit.WebViewClient
@@ -18,8 +17,6 @@ class DetailsActivity: AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-//       val sharedPreferences =getSharedPreferences("saver",Context.MODE_PRIVATE)
-//        val editor=sharedPreferences.edit()
 
         setContentView(R.layout.activity_details)
         val toolbar=findViewById<View>(R.id.toolbar) as androidx.appcompat.widget.Toolbar
@@ -43,15 +40,7 @@ class DetailsActivity: AppCompatActivity() {
         savebutton.setOnClickListener {
            if(buttonText!="Saved"){savebutton.setText(R.string.saved)
                detailsave.setBackgroundResource(R.drawable.detail_outline_bookmark_24)
-//               editor.putString("button","Saved")
-//               editor.putInt("position",intent.getIntExtra("position",0))
-//               editor.putString("title",newslist.title)
-//               editor.putString("imageurl",newslist.urlToImage)
-//               editor.putString("date",newslist.publishedAt)
-//               editor.putString("author",newslist.author)
-//               editor.putString("url",newslist.url)
-//               editor.putString("desc",newslist.description)
-//               editor.apply()
+
            }
         }
         Picasso.get().load(newslist.urlToImage)
@@ -86,7 +75,7 @@ class DetailsActivity: AppCompatActivity() {
     }
 
     override fun onSupportNavigateUp(): Boolean {
-        Log.d("backed","")
+  
         onBackPressed()
         return true
     }
