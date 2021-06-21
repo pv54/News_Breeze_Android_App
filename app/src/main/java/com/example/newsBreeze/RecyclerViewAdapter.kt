@@ -2,7 +2,6 @@ package com.example.newsBreeze
 
 import android.content.Context
 import android.content.Intent
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -72,9 +71,8 @@ class RecyclerViewAdapter(private var newslist: List<Article>, private val conte
             intent.putExtra("PHOTO_TRANSFER", cdata)
             intent.putExtra("position",position)
             intent.putExtra("save",holder.savebutton.text)
-            Log.d("read","${holder.readbutton.text}")
             context.startActivity(intent)
-            Log.d("tager","backed")
+     
 
         }
     }
