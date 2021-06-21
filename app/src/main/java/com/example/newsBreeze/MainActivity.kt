@@ -3,7 +3,6 @@ package com.example.newsBreeze
 import android.content.Intent
 import android.os.Build
 import android.os.Bundle
-import android.util.Log
 import android.view.Gravity
 import android.view.MenuItem
 import android.view.View
@@ -26,7 +25,6 @@ class MainActivity : AppCompatActivity() {
     var originalnewslist = ArrayList<Article>()
     private lateinit var popupMenu:PopupMenu
     override fun onCreate(savedInstanceState: Bundle?) {
-        Log.d("oncreate", "$flag")
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val toolbar = findViewById<View>(R.id.toolbar) as androidx.appcompat.widget.Toolbar
