@@ -3,7 +3,6 @@ package com.example.newsBreeze
 import SavedListAdapter
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.widget.SearchView
 import android.widget.Toast
@@ -80,7 +79,7 @@ class Saved_Search : AppCompatActivity(), RecyclerItemClickListner.OnRecyclerCli
     override fun onclick(v: View, position: Int) {
         Toast.makeText(this, "Click $position", Toast.LENGTH_SHORT).show()
         val news = savedListAdapter.getNews(position)
-        Log.d("impo","failed/success$news")
+       
         if (news != null) {
             val intent = Intent(this, DetailsActivity::class.java)
             intent.putExtra("PHOTO_TRANSFER", news)
