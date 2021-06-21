@@ -13,6 +13,7 @@
 * App also has search bar from where you can search particular news from the saved new list 
 ## Concepts Used 
 * Recycler view and it's adapter 
+* Recycler view onTouchListner
 * Downloading json data using Retrofit and parse it 
 * Switching between activities using intent 
 * Restoring state of app during orientation change 
