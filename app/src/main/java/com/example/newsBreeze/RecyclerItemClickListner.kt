@@ -1,7 +1,6 @@
 package com.example.newsBreeze
 
 import android.content.Context
-import android.util.Log
 import android.view.GestureDetector
 import android.view.MotionEvent
 import android.view.View
@@ -23,7 +22,7 @@ class RecyclerItemClickListner (context:Context,recyclerview:RecyclerView,privat
         }
 
         override fun onLongPress(e: MotionEvent) {
-            Log.d("Caller","LongTouch")
+        
             val childview=recyclerview.findChildViewUnder(e.x,e.y)!!
             listner.onLongClick(childview,recyclerview.getChildAdapterPosition(childview))
         }
