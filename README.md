@@ -1,7 +1,7 @@
 # News_Breeze_Android_App
 * This is an Android App which gives you the latest news headlines
 * This app is using [Newsapi](https://newsapi.org/) for fetching content 
-##Language Usde
+## Language Usde
 * Kotlin
 ## Functions
 * On opening this app you will get a list of news headines of India by default you can change it to US from the filter Button
